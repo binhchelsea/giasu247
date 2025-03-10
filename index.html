@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tạo ảnh tùy chỉnh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>TẠO NAME CARD</h1>
+
+    <form id="imageForm">
+      <label>Họ và Tên:</label>
+      <input type="text" id="line1" placeholder="Nhập Họ Tên" required />
+
+      <label>Chức vụ:</label>
+      <input type="text" id="line2" placeholder="Nhập chức vụ (VD: giáo sư)" required />
+
+      <label>Kinh nghiệm giảng dạy:</label>
+      <textarea id="line3" placeholder="Kinh nghiệm giảng dạy" rows="4"></textarea>
+
+      <label>Chọn ảnh đại diện:</label>
+      <input type="file" id="subImage" accept="image/*" required />
+
+      <button type="submit">Tạo ảnh</button>
+    </form>
+
+<canvas id="resultCanvas"></canvas>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
